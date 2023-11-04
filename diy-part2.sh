@@ -14,6 +14,8 @@
 rm -rf feeds/luci/themes/luci-theme-argon
 rm -rf feeds/luci/themes/luci-theme-argon-mod
 rm -rf feeds/luci/applications/luci-app-argon-config
+rm -rf feeds/luci/applications/luci-app-mosdns
+rm -rf feeds/packages/net/mosdns
 rm -rf feeds/packages/lang/golang
 sed -i 's/192.168.1.1/10.10.10.1/g' package/base-files/files/bin/config_generate
 git clone https://github.com/sbwml/packages_lang_golang -b 20.x feeds/packages/lang/golang
@@ -22,3 +24,4 @@ git clone https://github.com/jerrykuku/luci-app-argon-config package/luci-app-ar
 git clone https://github.com/sbwml/luci-app-alist package/luci-app-alist
 git clone -b main https://github.com/xiaorouji/openwrt-passwall package/psw
 git clone https://github.com/xiaorouji/openwrt-passwall-packages package/pswcore
+git clone https://github.com/sbwml/luci-app-mosdns package/mosdns
